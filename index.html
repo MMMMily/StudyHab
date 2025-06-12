@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <title>StudyHub - דשבורד</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>שלום <span id="userDisplayName"></span> 👋</h1>
+    <nav>
+      <a href="task.html">משימות</a>
+      <a href="course.html">קורסים</a>
+      <a href="calender.html">יומן</a>
+    </nav>
+  </header>
+  <main class="dashboard">
+    <section>
+      <h2>משימות קרובות</h2>
+      <ul id="upcomingTasks"></ul>
+    </section>
+    <section class="progress-section">
+        <h2>התקדמות חודשית</h2>
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: 0%;">0%</div>
+        </div>
+      </section>
+      
+    <section>
+      <h2>קורסים פעילים</h2>
+      <ul id="activeCourses"></ul>
+    </section>
+  </main>
+  <script src="scriptindex.js"></script>
+</body>
+</html>

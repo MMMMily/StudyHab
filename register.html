@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>StudyHub - הרשמה</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registerstyle.css"> </head>
+<body>
+    <main class="register-container">
+        <h1>הרשמה ל-StudyHub</h1>
+        <form id="registerForm">
+            <label for="newUsername">שם משתמש:</label>
+            <input type="text" id="newUsername" required>
+
+            <label for="newEmail">כתובת אימייל:</label>
+            <input type="email" id="newEmail" required>
+
+            <label for="newPassword">סיסמה:</label>
+            <input type="password" id="newPassword" required>
+
+            <label for="confirmPassword">אישור סיסמה:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <button type="submit">הירשם</button>
+            <p id="registerErrorMsg" class="error"></p>
+            <p class="login-link">
+                כבר יש לך חשבון? <a href="login.html">התחברות</a>
+            </p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <script src="registerscript.js"></script> </body>
+</html>
