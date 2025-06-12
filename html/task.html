@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>StudyHub - משימות</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ניהול משימות</h1>
+        <a href="index.html" class="back-link">חזרה לדשבורד</a>
+            
+    </header>
+    <main>
+        <section class="add-task">
+            <h2>➕ הוסף משימה חדשה</h2>
+            <form id="addTaskForm">
+                <input type="text" id="taskName" placeholder="שם משימה" required>
+                <input type="text" id="taskCourse" placeholder="קורס משויך" required>
+                
+                <select id="taskType">
+                    <option value="ממן\">ממ"ן</option>
+                    <option value="מבחן">מבחן</option>
+                    <option value="קריאה">קריאה</option>
+                    <option value="שיעור">שיעור</option>
+                </select>
+    
+                <input type="date" id="taskDate" required>
+    
+                <select id="taskStatus">
+                    <option value="פתוח">פתוח</option>
+                    <option value="בתהליך">בתהליך</option>
+                    <option value="הושלם">הושלם</option>
+                </select>
+    
+                <button type="submit">💾 שמור משימה</button>
+            </form>
+        </section>
+    
+        <input type="text" id="searchBox" placeholder="חיפוש משימה...">
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>שם</th>
+                    <th>סוג</th>
+                    <th>קורס</th>
+                    <th>דדליין</th>
+                    <th>סטטוס</th>
+                    <th>פעולות</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="../js/scriptesk.js"></script>
+</body>
+</html>
